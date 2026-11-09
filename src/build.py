@@ -170,7 +170,6 @@ def index_page(lang):
     <div>
       <div class="small-caps">{t(H['eyebrow'], lang)}</div>
       <h1>Reda Erraoui</h1>
-      <p class="title">{t(H['positioning'], lang)}</p>
       <p class="summary">{t(H['summary'], lang)}</p>
       {f'<dl class="details">{details}</dl>' if details else ""}
       <div class="actions">
