@@ -69,7 +69,7 @@ def head(lang, title, desc, rel, path_fr, path_en, og):
     """En-tête commun. rel : préfixe relatif vers la racine ('', '../', '../../')."""
     url = SITE["url"]
     ga = SITE.get("analytics_goatcounter") or ""
-    analytics = (f'<script data-goatcounter="https://{ga}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>\n' if ga else "")
+    analytics = (f'<script data-goatcounter="https://{ga}.goatcounter.com/count" async src="{rel}assets/js/stats.js"></script>\n' if ga else "")
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
